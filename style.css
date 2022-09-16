@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: #ecf4ff;
+  color: #1c1c1c;
+  margin: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  padding: 64px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+.perfil {
+  display: flex;
+  /*align-items: center;*/
+}
+.perfil-foto {
+  border-radius: 400px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.titulo {
+  margin-left: 16px;
+}
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.tema button {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 16px;
+  /*   quando usamos o padding se informaros dois px, o primeiro será a informação da distancia vetical das margens, e a segunda na horizontal das margens */
+  background: #ecf4ff;
+  border-radius: 100px;
+}
+.projetos {
+  display: flex;
+  flex-direction: column;
+  /*   align-items: center; */
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  margin-top: 32px;
+  padding: 32px;
+  /*padding cria uma margem em todos os cantos dos elementos internos de uma div, não interfere na margem externa*/
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  /*border-radios é os raio da broda, ou seja faz com que o elemento tenha bordas mais arredondadas dependendo do valor de px que você coloca, como deixar o elemento completamente redondo*/
+}
+
+/*quando uma tag no css começa com um . ela se refere a uma class criada dentro de uma tag expecifica no html*/
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+}
+.projetos-item {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.projetos-item a {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #375886 27.26%, #6887a4 96.03%);
+}
+
+/* quando possue dois tag com pontos se refere a mudar os elementos de uma classe expecifica dentro de outra classe */
+.dark .container {
+  background: #333439;
+  color: #f6f6f6;
+}
+.dark .projetos {
+  color: #1c1c1c;
+}
+.dark .tema button {
+  background: #1c1c1c;
+  color: #f6f6f6;
+  border: 2px solid #f7f7f7;
+}
